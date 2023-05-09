@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your email"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteY="32dp" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="enter your email"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="#5c5f72"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your password"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="#5c5f72"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        style="@android:style/Widget.Button"
+        android:layout_width="107dp"
+        android:layout_height="65dp"
+        android:background="@drawable/login_btn_background"
+        android:text="login"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="285dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="207dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:text="Don't remember password"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/google" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/twitter" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Or Login With "
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="525dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dont't Have An Account? SignUp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#2f3363"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="663dp" />
+    tools:layout_editor_absoluteX="149dp"
+    tools:layout_editor_absoluteY="284dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
